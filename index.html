@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>AtomView — Мгновенный фоторедактор | Скачать v1.0.0</title>
+    <meta name="description" content="AtomView — сверхбыстрый графический редактор. Простота, скорость и прозрачный интерфейс.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --panel: #111111;
+            --accent: #ffffff;
+            --text-main: #f5f5f5;
+            --text-dim: #888888;
+            --border: #222222;
+        }
+
+        body { margin: 0; font-family: 'Inter', sans-serif; background-color: var(--bg); color: var(--text-main); line-height: 1.6; }
+
+        header {
+            padding: 1rem 8%; display: flex; justify-content: space-between; align-items: center;
+            background: rgba(10, 10, 10, 0.8); backdrop-filter: blur(20px);
+            position: fixed; top: 0; width: 84%; z-index: 1000; border-bottom: 1px solid var(--border);
+        }
+
+        .logo { font-weight: 900; font-size: 1.4rem; letter-spacing: -1px; }
+        .version-badge { font-size: 0.7rem; background: var(--border); padding: 4px 12px; border-radius: 20px; color: var(--text-dim); }
+
+        .hero {
+            padding: 200px 8% 120px; text-align: center;
+            background: radial-gradient(circle at 50% 30%, #1a1a1a 0%, var(--bg) 60%);
+        }
+
+        .hero h1 { font-size: clamp(2.5rem, 8vw, 5.5rem); margin: 0; font-weight: 900; letter-spacing: -3px; line-height: 0.9; }
+        .hero p { font-size: 1.2rem; color: var(--text-dim); max-width: 700px; margin: 30px auto; font-weight: 300; }
+
+        .btn-download {
+            background: var(--accent); color: #000; padding: 20px 50px; border-radius: 12px;
+            text-decoration: none; font-weight: 800; display: inline-block; transition: 0.3s;
+            font-size: 1.1rem; border: 2px solid var(--accent);
+        }
+        .btn-download:hover { background: transparent; color: #fff; transform: translateY(-3px); }
+
+        .sub-text { font-size: 0.8rem; color: var(--text-dim); margin-top: 15px; display: block; }
+
+        .grid { padding: 80px 8%; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; }
+        .card { background: var(--panel); padding: 30px; border-radius: 20px; border: 1px solid var(--border); transition: 0.3s; }
+        .card:hover { border-color: #444; transform: translateY(-5px); }
+        .card h3 { margin-top: 0; font-size: 1.3rem; }
+        .card p { color: var(--text-dim); font-size: 0.95rem; margin-bottom: 0; }
+
+        footer { padding: 60px 8%; text-align: center; border-top: 1px solid var(--border); color: #444; font-size: 0.8rem; }
+        
+        /* Стили для кнопки лицензии */
+        .license-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #666;
+            text-decoration: none;
+            border: 1px solid #333;
+            padding: 8px 20px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+        .license-link:hover {
+            color: var(--text-main);
+            border-color: #555;
+            background: #1a1a1a;
+        }
+
+        .lang-tags { margin-top: 20px; display: flex; justify-content: center; gap: 10px; }
+        .tag { font-size: 0.7rem; border: 1px solid #333; padding: 2px 8px; border-radius: 5px; color: #666; text-transform: uppercase; }
+
+        @media (max-width: 600px) {
+            header { width: 92%; padding: 1rem 4%; }
+            .hero { padding-top: 140px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">ATOMVIEW</div>
+    <div class="version-badge">RELEASE v1.0.0</div>
+</header>
+
+<section class="hero">
+    <h1>Чистая скорость.<br>Ничего лишнего.</h1>
+    <p>Мгновенный запуск и профессиональная обработка фото. AtomView создан для тех, кто ценит время и эстетичный минимализм.</p>
+    
+    <a href="downland/AtomView_v1.0.0_Setup.exe" class="btn-download" download>Установить AtomView</a>
+    
+    <span class="sub-text">Windows 10/11 • x64 • Freeware</span>
+
+    <div class="lang-tags">
+        <span class="tag">RU</span>
+        <span class="tag">EN</span>
+        <span class="tag">DE</span>
+        <span class="tag">FR</span>
+        <span class="tag">ES</span>
+    </div>
+</section>
+
+<section class="grid">
+    <div class="card">
+        <h3>🚀 Мгновенный отклик</h3>
+        <p>Никаких тяжелых библиотек. Программа запускается за доли секунды и готова к работе сразу после клика.</p>
+    </div>
+    <div class="card">
+        <h3>✨ Умная простота</h3>
+        <p>Интерфейс не перегружен лишними меню. Интуитивное управление и фокус на вашем контенте.</p>
+    </div>
+    <div class="card">
+        <h3>🌍 Многоязычность</h3>
+        <p>Полная поддержка локализации. AtomView говорит на вашем языке с первого запуска.</p>
+    </div>
+    <div class="card">
+        <h3>🛡 Полная приватность</h3>
+        <p>Ваши данные не покидают компьютер. Работайте оффлайн без регистрации и передачи метаданных в сеть.</p>
+    </div>
+</section>
+
+<footer>
+    <p>Разработка: <b>gghy3430-glitch</b> &copy; 2026<br>
+    AtomView является бесплатным ПО. Проект постоянно совершенствуется.</p>
+    
+    <a href="license.html" class="license-link">Лицензионное соглашение</a>
+</footer>
+
+</body>
+</html>
